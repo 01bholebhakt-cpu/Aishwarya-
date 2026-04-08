@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aiswarya Makeup Gallery & Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Premium Luxury Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,600;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --blush: #F8E8E8;
+            --rose-gold: #D9A0A3;
+            --champagne: #FAF6F2;
+            --dark-text: #3A3535;
+        }
+        body { font-family: 'Montserrat', sans-serif; background-color: #FFFFFF; color: var(--dark-text); }
+        .serif { font-family: 'Cormorant Garamond', serif; }
+        .bg-blush { background-color: var(--blush); }
+        .text-rose { color: var(--rose-gold); }
+        .border-rose { border-color: var(--rose-gold); }
+        
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(217, 160, 163, 0.2);
+        }
+        
+        .btn-luxury {
+            background: #3A3535;
+            color: white;
+            transition: all 0.4s ease;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+        }
+        .btn-luxury:hover {
+            background: var(--rose-gold);
+            transform: translateY(-2px);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.1)), url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="flex justify-between h-24 items-center">
+                <div class="flex flex-col items-center">
+                    <span class="serif text-3xl tracking-[0.2em] font-light leading-none">AISWARYA</span>
+                    <span class="text-[9px] tracking-[0.4em] uppercase mt-2 text-rose font-medium">Makeup Gallery & Academy</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-10 text-[11px] uppercase tracking-[0.2em] font-medium">
+                    <a href="index.html" class="text-rose">Home</a>
+                    <a href="about.html" class="hover:text-rose transition">About</a>
+                    <a href="services.html" class="hover:text-rose transition">Services</a>
+                    <a href="gallery.html" class="hover:text-rose transition">Gallery</a>
+                    <a href="contact.html" class="hover:text-rose transition">Contact</a>
+                </div>
+
+                <a href="contact.html" class="hidden md:block border border-rose px-6 py-2 text-[10px] tracking-widest uppercase hover:bg-rose-gold hover:text-white transition">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 hero-gradient"></div>
+        <div class="relative z-10 text-center px-4" data-aos="fade-up" data-aos-duration="1500">
+            <span class="text-rose uppercase tracking-[0.5em] text-xs mb-6 block font-semibold">Exquisite Artistry</span>
+            <h1 class="serif text-6xl md:text-8xl font-light mb-8 leading-tight italic">Radiate Your <br> Inner Elegance</h1>
+            <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+                <a href="services.html" class="btn-luxury px-10 py-4">View Collections</a>
+                <a href="contact.html" class="serif text-xl italic border-b border-dark-text pb-1 hover:text-rose hover:border-rose transition">Our Academy</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTRO SECTION -->
+    <section class="py-24 bg-[#FAF6F2]">
+        <div class="max-w-4xl mx-auto text-center px-6" data-aos="fade-up">
+            <h2 class="serif text-4xl md:text-5xl font-light mb-8">Crafting timeless beauty for the modern bride.</h2>
+            <p class="text-gray-500 leading-relaxed font-light text-lg mb-10">Located in the heart of Cherpu, Thrissur, we specialize in high-definition makeup that blends tradition with contemporary luxury. Certified in Airbrush and HD techniques, our academy shapes the next generation of beauty experts.</p>
+            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80" alt="Signature Look" class="w-full h-[500px] object-cover rounded-sm grayscale-[30%] hover:grayscale-0 transition duration-1000">
+        </div>
+    </section>
+
+    <!-- WHATSAPP FLOATING -->
+    <a href="https://wa.me/919544473927" class="fixed bottom-10 right-10 z-50 bg-white p-4 rounded-full shadow-2xl border border-blush hover:scale-110 transition">
+        <i class="fa-brands fa-whatsapp text-2xl text-green-500"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>
